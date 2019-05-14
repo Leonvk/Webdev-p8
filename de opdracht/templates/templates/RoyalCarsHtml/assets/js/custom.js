@@ -429,7 +429,7 @@ var App = (function(window){
 
     MenuDropIcon: function(){
       $('.r-has-child').each(function(){
-        $(this).append('<span class="r-submenu-icon"> <i class="fa fa-angle-down"></i> </span>')
+        $(this).append('<span class="r-submenu-icon"> <i class=""></i> </span>')
       });
 
       $(document).on('click', '.r-submenu-icon', function(){
