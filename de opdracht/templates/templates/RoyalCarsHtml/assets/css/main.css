@@ -12193,7 +12193,7 @@ div.r-who-we-outer {
       .r-advantages-part .r-advantage-main-part .advantage-head h2 b {
         font-weight: 700; }
     .r-advantages-part .r-advantage-main-part .advantage-head::after {
-      content: "A";
+      content: "$";
       font-size: 200px;
       color: #f1ecd0;
       font-weight: 700;
@@ -12742,7 +12742,7 @@ a:focus {
   .r-sec-head.r-sec-head-b::after {
     content: "B"; }
   .r-sec-head.r-sec-head-w::after {
-    content: "W"; }
+    content: "C"; }
   .r-sec-head.r-sec-head-r::after {
     content: "R"; }
   .r-sec-head.r-sec-head-t::after {
