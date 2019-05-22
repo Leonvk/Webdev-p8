@@ -10149,7 +10149,7 @@ COLOR CUSTOMIZER
               content: ">>";
               margin-right: 10px; }
             .r-header .r-header-strip .r-nav-section nav > ul > li.r-has-child > ul > li > a:hover {
-              background-color: #ffcd00;
+              background-color: red;
               color: #000; }
     .r-header .r-header-strip.r-header-fixed {
       position: fixed;
@@ -10252,7 +10252,11 @@ COLOR CUSTOMIZER
     padding: 20px 0;
     color: #fff; }
     .r-header.r-header-strip-01 .r-nav-section nav ul li a:hover {
-      color: #ffcd00; }
+      color: #ffcd00;
+		text-decoration: underline;
+		font-size: 17px;
+		text-shadow: 2px 2px 5px black;
+					}
 .r-header.r-header-strip-01 .r-car-search {
   position: absolute;
   left: 0;
@@ -10349,8 +10353,10 @@ COLOR CUSTOMIZER
 .r-header.r-header-strip-03 .r-header-action a {
   padding: 11px 18px;
   border-color: rgba(255, 255, 255, 0.3); }
+
 .r-header.r-header-strip-03 .r-logo {
   margin: 10px 0; }
+
 .r-header.r-header-strip-03 .r-nav-section nav ul {
   padding: 10px 0px; }
   .r-header.r-header-strip-03 .r-nav-section nav ul li a {

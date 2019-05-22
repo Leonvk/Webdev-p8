@@ -20,7 +20,7 @@
 						position: relative;
 						> a{
 							font-size: 16px;
-							color: #333;
+							color: red !important;
 							font-weight: 500;
 							text-decoration: none;
                             display: inline-block;
@@ -30,7 +30,7 @@
                             -ms-transition: all 0.2s linear;
                             transition: all 0.2s linear;
 							&:hover, &:active{
-								color: #fff;
+								color: red;
 								font-weight: 500;
 							}
 						}
