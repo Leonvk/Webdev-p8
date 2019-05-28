@@ -15339,3 +15339,19 @@ input, select {
     padding-right: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
+
+.r-best-vehicle-single {
+  height: 95%;
+}
+
+.r-header-strip.r-header-fixed {
+  background-color: #ffcd00 !important;
+}
+
+.r-header-strip.r-header-fixed ul li a {
+  color: black !important;
+}
+
+.r-header-strip.r-header-fixed ul li a:hover {
+  color: white !important;
+}
