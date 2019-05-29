@@ -10068,6 +10068,7 @@ COLOR CUSTOMIZER
   background: #ffcd00; }
 
 .r-customizer i {
+  display: none;
   background: #ffffff none repeat scroll 0 0;
   cursor: pointer;
   color: #000000;
