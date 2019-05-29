@@ -10703,7 +10703,7 @@ COLOR CUSTOMIZER
     content: "";
     width: 450px;
     height: 485px;
-    background: url(../images/footer-car.png) no-repeat;
+    /*background: url(../images/footer-car.png) no-repeat;*/
     background-size: cover;
     position: absolute;
     right: 0;
