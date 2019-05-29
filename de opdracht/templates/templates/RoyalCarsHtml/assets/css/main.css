@@ -10255,7 +10255,6 @@ COLOR CUSTOMIZER
       color: #ffcd00;
 		text-decoration: underline;
 		font-size: 17px;
-		text-shadow: 2px 2px 5px black;
 					}
 .r-header.r-header-strip-01 .r-car-search {
   position: absolute;
@@ -15353,6 +15352,8 @@ input, select {
 
 .r-header-strip.r-header-fixed ul li a {
   color: black !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .r-header-strip.r-header-fixed ul li a:hover {
@@ -15362,4 +15363,8 @@ input, select {
 .r-header.r-header-strip-01 .r-header-action a:hover {
   background-color: white !important;
   color: black !important;s
+}
+
+li.r-has-child {
+  height: 50px;
 }
