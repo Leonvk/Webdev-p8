@@ -30,18 +30,14 @@
     	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     	crossorigin="anonymous">
 	  </script>
-    	<script>
-    	$(function(){
-      		$("#header").load("header.html");
-    	});
-    	</script>
+    <script type="text/javascript" src="assets\js\custom.js"></script>
 
   </head>
   <body>
       <div class="r-wrapper">
         <header>
           <div class="r-header r-header-inner r-header-strip-01">
-            <div id="header"></div>
+            <div id="header"><script>header()</script></div>
 			  <div w3-include-html="\header.html"></div>
             <div class="r-slider owl-carousel" id="defaultHomeSlider">
               <div class="r-slider-item">
