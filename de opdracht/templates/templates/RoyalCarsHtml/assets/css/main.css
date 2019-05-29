@@ -10702,7 +10702,7 @@ COLOR CUSTOMIZER
     content: "";
     width: 450px;
     height: 485px;
-    background: url(../images/footer-car.png) no-repeat;
+    /*background: url(../images/footer-car.png) no-repeat;*/
     background-size: cover;
     position: absolute;
     right: 0;
@@ -12334,7 +12334,7 @@ div.r-who-we-outer {
 
 .r-new-member {
   padding: 115px 0;
-  background-image: url("../images/new-member-bg.jpg");
+  background-image: url("../images/bootje.jpg");
   background-repeat: no-repeat;
   background-size: 100% 600px; }
   .r-new-member .r-sec-head span {
