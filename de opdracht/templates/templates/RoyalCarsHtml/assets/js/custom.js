@@ -38,15 +38,15 @@ var App = (function(window){
 
       /* DATE TIME PICKER */
       this.DateTimePicker();
-  
+
       /* MAP TOGGLE */
       this.MapToggle();
 
       /* BEST TAB */
-      this.BestTab(); 
+      this.BestTab();
 
       /* COLOR SWITCHER */
-      this.ColorSwitcher(); 
+      this.ColorSwitcher();
 
       /* BACK TO TOP */
       this.BackToTop();
@@ -169,7 +169,7 @@ var App = (function(window){
 
       });
     },
-    
+
     CustomAccordion: function(){
       $(document).on('click','.r-accordion-heading', function(){ console.log("111");
         var accordionBody = $(this).next('.r-accordion-body');
@@ -419,11 +419,11 @@ var App = (function(window){
         $(this).addClass('r-flip-active');
         $(this).removeClass('r-flip-map');
       });
-      $(document).on("click", ".r-flip-active", function(){ 
+      $(document).on("click", ".r-flip-active", function(){
         $(".r-list-area").css("margin-left", 'auto');
         $(".r-map-area").removeClass("r-map-full");
         $(this).removeClass('r-flip-active');
-        $(this).addClass('r-flip-map'); 
+        $(this).addClass('r-flip-map');
       });
     },
 
@@ -434,7 +434,7 @@ var App = (function(window){
 
       $(document).on('click', '.r-submenu-icon', function(){
         var subMenu = $(this).prev('ul');
-        
+
         if(subMenu.is(':hidden')){
           subMenu.show();
         }
@@ -448,7 +448,7 @@ var App = (function(window){
 
     BestTab: function(){
       $(".r-best-leftbar ul li").on("click", function(){
-        var id = $(this).attr("data-tab"); 
+        var id = $(this).attr("data-tab");
         $(".r-best-leftbar ul li").removeClass("r-best-vehicle-acitve");
         $(this).addClass("r-best-vehicle-acitve");
         $(".r-best-tab-outer > div").addClass("d-none");
@@ -462,7 +462,7 @@ var App = (function(window){
         $("#r-color_selector > li").removeClass("r-active-color");
         $(this).addClass("r-active-color");
         $(document).find("link#r-color-roller").attr("href","");
-        $(document).find("link#r-color-roller").attr("href","assets/color-files/"+color_id+".css") 
+        $(document).find("link#r-color-roller").attr("href","assets/color-files/"+color_id+".css")
       })
       $("#r-selector_icon").on("click", function(){
         $("#r-customizer").toggleClass("r-customizer_toggle");
@@ -533,7 +533,7 @@ $(document).ready(function($) {
     $('a[data-rel^=lightcase]').lightcase();
   }
 
- 
+
 
 });
 
@@ -549,5 +549,8 @@ $(window).on('scroll', function(){
   }
 });
 
-
-
+function header() {
+  $(function(){
+      $("#header").load("header.html");
+  });
+}

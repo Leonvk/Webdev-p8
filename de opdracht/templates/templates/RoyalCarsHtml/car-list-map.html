@@ -21,23 +21,18 @@
       <!-- CSS:: MAIN -->
       <link rel="stylesheet" type="text/css" href="assets/css/main.css">
       <link rel="stylesheet" type="text/css" id="r-color-roller" href="assets/color-files/color-08.css">
-	  
+
 	  <script
     	src="https://code.jquery.com/jquery-3.3.1.js"
     	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     	crossorigin="anonymous">
 	  </script>
-
-<script> 
-    	$(function(){
-      		$("#header").load("header.html"); 
-    	});
-    	</script>
+    <script type="text/javascript" src="assets\js\custom.js"></script>
 
   </head>
-  <body> 
+  <body>
      <section id="r-customizer" class="r-customizer">
-            <div class="r-selector"> 
+            <div class="r-selector">
                   <span class="d-block text-center">Color Options</span>
                   <div class="r-color_section r-color_block">
                         <ul class="r-color_selector" id="r-color_selector">
@@ -50,14 +45,15 @@
                             <li class="r-color_7" data-attr="color-07"></li>
                             <li class="r-color_8" data-attr="color-08"></li>
                         </ul>
-                  </div>  
+                  </div>
             </div>
             <i id="r-selector_icon" class="fa fa-cog"></i>
       </section>
       <div class="r-wrapper">
         <header>
           <div class="r-header r-header-inner">
-            <div id="header"></div>
+            <div class="r-header r-header-inner r-header-strip-01">
+            <div id="header"><script>header()</script></div>
             <div class="r-header-inner-banner">
               <div class="r-header-in-over">
                 <h1>Royal Cars <b>Vehicles</b> </h1>
@@ -70,6 +66,7 @@
               </div>
             </div>
           </div>
+        </div>
         </header>
         <div class="container-fluid">
           <div class="row">
