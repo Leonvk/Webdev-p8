@@ -12341,7 +12341,7 @@ div.r-who-we-outer {
   .r-new-member .r-sec-head span {
     color: #fff; }
   .r-new-member .r-sec-head h2 {
-    color: #ffcd00; }
+    color: white !important; }
   .r-new-member .r-sec-head.r-sec-head-left::after {
     color: #484746;
     top: -20px;
