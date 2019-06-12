@@ -191,78 +191,78 @@ session_start();
                             </select>
                     <br>
                     Date Start:
-                    <input name="Datestart" type="date" required="">
+                    <input name="datestart" type="date" required="">
                     <br>
                     <br>
                     Date End:
-                    <input name="Dateend" type="date" required="">
+                    <input name="dateend" type="date" required="">
                     <br>
                     <br>
                     Catering:
-                    <select name="Catering" class="form-control" required="">
+                    <select name="catering" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
                       <option value="">Yes</option>
                       <option value="">No</option>
                     </select>
                     <br>
                     Skipper:
-                    <select name="Skipper" class="form-control" required="">
+                    <select name="skipper" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
                       <option value="">Yes</option>
                       <option value="">No</option>
                     </select>
                     <br>
                     Flottielje:
-                    <select name="Flottielje" class="form-control" required="">
+                    <select name="flottielje" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
                       <option value="">Yes</option>
                       <option value="">No</option>
                     </select>
                     <br>
                     Groceries:
-                    <select name="Groceries" class="form-control" required="">
+                    <select name="groceries" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
                       <option value="">Yes</option>
                       <option value="">No</option>
                     </select>
                     <br>
                     Transfer:
-                    <select name="Transfer" class="form-control" required="">
+                    <select name="transfer" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
                       <option value="">Yes</option>
                       <option value="">No</option>
                     </select>
                     <br>
                     Insurence:
-                    <select name="Insurence" class="form-control" required="">
+                    <select name="insurence" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
                       <option value="">Yes</option>
                       <option value="">No</option>
                     </select>
                     <br>
                     ChildLifejackets:
-                    <select name="ChildLifejackets" class="form-control" required="">
+                    <select name="childLifejackets" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
                       <option value="">Yes</option>
                       <option value="">No</option>
                     </select>
                     <br>
                     Fishinggear:
-                    <select name="Fishinggear" class="form-control" required="">
+                    <select name="fishinggear" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
                       <option value="">Yes</option>
                       <option value="">No</option>
                     </select>
                     <br>
                     Paddleboard:
-                    <select name="Paddleboard" class="form-control" required="">
+                    <select name="paddleboard" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
                       <option value="">Yes</option>
                       <option value="">No</option>
                     </select>
                     <br>
                     Aggreed To Terms:
-                    <select name="Terms" class="form-control" required="">
+                    <select name="terms" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
                       <option value="">Yes</option>
                     </select>
@@ -273,7 +273,7 @@ session_start();
                     </div>
 
                   </form> 
-                <!--   <?php
+                <?php
                     if(isset($_POST["submit"])){
                         // conectie met database
                             $servername = "localhost";
@@ -286,15 +286,77 @@ session_start();
                             if (!$conn) {
                               die("Connection failed: " . mysqli_connect_error());
                             }
-                         //sql comando
-    $sql = "INSERT INTO `cijfers` (`ID`, `gebruiker ID`, `Cijfer`, `time`) VALUES ( NULL , '$gebruiker', '$cijfer', CURRENT_TIMESTAMP);";                                     // pas de sql comando aan zodat hij bij de database past.
+                        //waarde
+                          $ID = 1;
+                          $CID = 1;
+                          $YID = 1;
+                          $status = "confirmed";
+                          $paymentstatus = "open";
+                          $paymentPrefrence = $_POST['payment'];
+                          $dates = $_POST['datestart'];
+                          $datee = $_POST['dateend'];
+                          if($_POST['catering'] == "Yes") {
+                          $catering = "Y";
+                        } else {
+                         $catering = "N";
+                      }
+                          if($_POST['skipper'] == "Yes") {
+                          $skipper = "Y";
+                        } else {
+                         $skipper = "N";
+                      }
+                          if($_POST['flottielje'] == "Yes") {
+                          $flottielje = "Y";
+                        } else {
+                         $flottielje = "N";
+                      }
+                          if($_POST['groceries'] == "Yes") {
+                          $groceries = "Y";
+                        } else {
+                         $groceries = "N";
+                      }   
+                          if($_POST['transfer'] == "Yes") {
+                          $transfer = "Y";
+                        } else {
+                         $transfer = "N";
+                      }   
+                          if($_POST['insurence'] == "Yes") {
+                          $insurence = "Y";
+                        } else {
+                         $insurence = "N";
+                      }   
+                          if($_POST['childLifejackets'] == "Yes") {
+                          $childLifejackets = "Y";
+                        } else {
+                         $childLifejackets = "N";
+                      }   
+                          if($_POST['fishinggear'] == "Yes") {
+                          $fishinggear = "Y";
+                        } else {
+                         $fishinggear = "N";
+                      }  
+                          if($_POST['paddleboard'] == "Yes") {
+                          $paddleboard = "Y";
+                        } else {
+                         $paddleboard = "N";
+                      }  
+                          if($_POST['terms'] == "Yes") {
+                          $aggreedToTerms = "Y";
+                        } else {
+                         $aggreedToTerms = "N";
+                      }  
+
+                        //sql comando
+    $sql = "INSERT INTO `bookings` (`bookingID`, `Customers_customerID`, `Yachts_yachtID`, `status`, `paymentStatus`, `paymentPreference`, `date_start`, `date_end`, `catering`, `skipper`, `flottielje`, `groceries`, `transfer`, `insurence`, `childLifejackets`, `fishinggear`, `paddleboard`, `aggreedToTerms`) VALUES ($ID, '$CID', '$YID', '$status', '$paymentstatus', '$paymentPrefrence', 'dates', 'datee', '$catering', '$skipper', '$flottielje', '$groceries', '$transfer', '$insurence', '$childLifejackets', '$fishinggear', '$paddleboard', '$aggreedToTerms')";                             
+      
       //sql comando uitvoeren
-      if (mysqli_query($conn, $sql)) {   
+      if(mysqli_query($conn, $sql)) {   
           echo "gelukt";  
     }
                     }
+                    ?>
       
-                  ?> -->
+                  
                   <!-- 
                   <div class="r-accordion-body">
                     <form>
