@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
+      <?php
+      foreach(glob("php/*.php") as $filename)
+      {
+        include $filename;
+      }
+      ?>
       <!-- PAGE TITLE -->
       <title>Login-Register - Royal Cars</title>
 
@@ -29,24 +35,6 @@
 
   </head>
   <body>
-       <section id="r-customizer" class="r-customizer">
-            <div class="r-selector">
-                  <span class="d-block text-center">Color Options</span>
-                  <div class="r-color_section r-color_block">
-                        <ul class="r-color_selector" id="r-color_selector">
-                            <li class="r-color_1" data-attr="color-01"></li>
-                            <li class="r-color_6" data-attr="color-06"></li>
-                            <li class="r-color_2" data-attr="color-02"></li>
-                            <li class="r-color_3" data-attr="color-03"></li>
-                            <li class="r-color_4" data-attr="color-04"></li>
-                            <li class="r-color_5" data-attr="color-05"></li>
-                            <li class="r-color_7" data-attr="color-07"></li>
-                            <li class="r-color_8" data-attr="color-08"></li>
-                        </ul>
-                  </div>
-            </div>
-            <i id="r-selector_icon" class="fa fa-cog"></i>
-      </section>
       <div class="r-wrapper">
         <header>
           <div class="r-header r-header-inner">
@@ -83,17 +71,25 @@
                       <a href="#"><img src="assets/images/logo_small.png" class="img-fluid d-block m-auto" alt=""></a>
                     </div>
                     <div class="r-or-line"><span>OR SIGN IN</span></div>
-                    <form action="#">
+                    <form action="#" method="post">
                       <div class="form-group">
-                        <input type="text" class="form-control" required placeholder="Email">
+                        <input type="email" name="mailText" class="form-control" required placeholder="Email">
                       </div>
                       <div class="form-group">
-                        <input type="password" class="form-control" required placeholder="Password">
+                        <input type="password" name="idText" class="form-control" required placeholder="Customer ID">
                       </div>
                       <div class="form-group">
-                        <button class="btn btn-full">LOGIN NOW</button>
+                        <input class="btn btn-full" type="submit" value="LOGIN NOW" name="login">
                       </div>
                     </form>
+
+                    <?php
+                    if(isset($_POST['login']))
+                    {
+                     login();
+                    }
+                    ?>
+
                     <div class="r-from-inof">
                       <p class="text-center">
                         * Denotes mandatory field. <br>
