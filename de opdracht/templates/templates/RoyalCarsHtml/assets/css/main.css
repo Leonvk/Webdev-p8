@@ -12335,13 +12335,13 @@ div.r-who-we-outer {
 
 .r-new-member {
   padding: 115px 0;
-  background-image: url("../images/bootje.jpg");
+  background-image: url("../images/boat4.jpg");
   background-repeat: no-repeat;
   background-size: 100% 600px; }
   .r-new-member .r-sec-head span {
     color: #fff; }
   .r-new-member .r-sec-head h2 {
-    color: #ffcd00; }
+    color: white !important; }
   .r-new-member .r-sec-head.r-sec-head-left::after {
     color: #484746;
     top: -20px;
