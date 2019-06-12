@@ -104,23 +104,31 @@
                     <span>Required information for account creation</span>
                   </div>
                   <div class="r-auth-form">
-                    <form action="#">
+                    <form action="#" method="post">
                       <div class="form-group">
-                        <input type="text" required class="form-control" placeholder="User name">
+                        <input type="text" name="fnameText" required class="form-control" placeholder="Firstname">
                       </div>
                       <div class="form-group">
-                        <input type="password" required class="form-control" placeholder="Password">
+                        <input type="text" name="lnameText" required class="form-control" placeholder="Lastname">
                       </div>
                       <div class="form-group">
-                        <input type="password" required class="form-control" placeholder="Confirm Password">
+                        <input type="text" name="addressText" required class="form-control" placeholder="Address">
                       </div>
                       <div class="form-group">
-                        <input type="email" required class="form-control" placeholder="Email Address">
+                        <input type="email" name="mailText" required class="form-control" placeholder="Email Address">
                       </div>
                       <div class="form-group">
-                        <button class="btn btn-full">SIGN UP NOW</button>
+                        <input class="btn btn-full" type="submit" value="SIGN UP NOW" name="signup">
                       </div>
                     </form>
+
+                    <?php
+                    if(isset($_POST['signup']))
+                    {
+                     register();
+                    }
+                    ?>
+
                   </div>
                 </div>
               </div>
