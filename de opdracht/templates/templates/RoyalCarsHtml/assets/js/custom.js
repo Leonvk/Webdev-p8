@@ -551,6 +551,6 @@ $(window).on('scroll', function(){
 
 function header() {
   $(function(){
-      $("#header").load("header.html");
+      $("#header").load("header.php");
   });
 }
