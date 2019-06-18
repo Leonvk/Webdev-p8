@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-      <!-- PAGE TITLE -->
+
+      <?php
+
+      session_start();
+
+      foreach(glob("php/*.php") as $filename)
+      {
+        include $filename;
+      }
+      ?>
+
+          <!-- PAGE TITLE -->
       <title>Home - Coral Yachts</title>
 
       <!-- META-DATA -->
@@ -38,7 +49,7 @@
         <header>
           <div class="r-header r-header-inner r-header-strip-01">
             <div id="header"><script>header()</script></div>
-			  <div w3-include-html="\header.html"></div>
+			  <div w3-include-html="\header.php"></div>
             <div class="r-slider owl-carousel" id="defaultHomeSlider">
               <div class="r-slider-item">
                 <img src="assets/images/blue-boats-daylight-358326.jpg" class="img-fluid d-block m-auto" alt="">
@@ -1488,7 +1499,7 @@
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
         </section> -->
         <section id="r-faq-section">
 

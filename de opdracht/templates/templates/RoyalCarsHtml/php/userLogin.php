@@ -8,13 +8,21 @@ function login() {
 
   $rows = $query->num_rows;
 
-  if($rows == 0)
-  {
-    echo 'Login failed';
+  if($_SESSION["user"] != "") {
+    // header("Location: index.php");
+    echo "You're already logged in! Logout before you try again!";
   }
   else
   {
-    echo 'Login successful';
+    if($rows == 0)
+    {
+      echo 'Login failed';
+    }
+    else
+    {
+      $_SESSION["user"] = $_POST["mailText"];
+      echo 'Login successful';
+    }
   }
 }
 ?>

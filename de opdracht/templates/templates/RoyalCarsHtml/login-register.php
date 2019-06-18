@@ -2,11 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
       <?php
+
+      session_start();
+
       foreach(glob("php/*.php") as $filename)
       {
         include $filename;
       }
+
       ?>
+
       <!-- PAGE TITLE -->
       <title>Login-Register - Royal Cars</title>
 
@@ -87,6 +92,17 @@
                     if(isset($_POST['login']))
                     {
                      login();
+                    }
+                    ?>
+                  <form action="#" method="post">
+                    <div class="form-group">
+                      <input class="btn btn-full" type="submit" value="LOGOUT" name="logout">
+                    </div>
+                  </form>
+                    <?php
+                    if(isset($_POST['logout']))
+                    {
+                     logout();
                     }
                     ?>
 
