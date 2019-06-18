@@ -1,6 +1,11 @@
 <?php
 function checkAcc() {
-  if($_SESSION["user"] != "") {
+  if (session_status() == PHP_SESSION_DISABLED) {
+    echo "Login";
+  }
+  else
+  {
+    if($_SESSION["user"] != "") {
     // header("Location: index.php");
     echo "Account";
   }
@@ -8,6 +13,7 @@ function checkAcc() {
   {
     echo "Login";
   }
+}
 }
 
 ?>

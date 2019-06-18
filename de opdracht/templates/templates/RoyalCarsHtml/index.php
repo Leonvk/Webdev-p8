@@ -6,8 +6,6 @@
 
       session_start();
 
-      $_SESSION["user"];
-
       foreach(glob("php/*.php") as $filename)
       {
         include $filename;
