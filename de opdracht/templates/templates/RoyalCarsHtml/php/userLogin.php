@@ -21,6 +21,7 @@ function login() {
     else
     {
       $_SESSION["user"] = $_POST["mailText"];
+      $_SESSION["userid"] = $_POST["idText"];
       echo 'Login successful';
     }
   }

@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<?php 
-session_start();
-?>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
       <!-- PAGE TITLE -->
@@ -29,6 +26,16 @@ session_start();
     	crossorigin="anonymous">
 	  </script>
     <script type="text/javascript" src="assets\js\custom.js"></script>
+
+    <?php
+
+    session_start();
+
+    foreach(glob("php/*.php") as $filename)
+    {
+      include $filename;
+    }
+    ?>
 
   </head>
   <body>
@@ -272,14 +279,14 @@ session_start();
                       <input name="submit" type="submit" class="btn-primary" value="Reserve Now" />
                     </div>
 
-                  </form> 
+                  </form>
                 <?php
                     if(isset($_POST["submit"])){
                         // conectie met database
                             $servername = "localhost";
                             $username = "root";
                             $password = "";
-                            $dbname = "coralyachts"; 
+                            $dbname = "coralyachts";
                          // Create connection
                             $conn = mysqli_connect($servername, $username, $password, $dbname);
                          // Check connection
@@ -314,50 +321,50 @@ session_start();
                           $groceries = "Y";
                         } else {
                          $groceries = "N";
-                      }   
+                      }
                           if($_POST['transfer'] == "Yes") {
                           $transfer = "Y";
                         } else {
                          $transfer = "N";
-                      }   
+                      }
                           if($_POST['insurence'] == "Yes") {
                           $insurence = "Y";
                         } else {
                          $insurence = "N";
-                      }   
+                      }
                           if($_POST['childLifejackets'] == "Yes") {
                           $childLifejackets = "Y";
                         } else {
                          $childLifejackets = "N";
-                      }   
+                      }
                           if($_POST['fishinggear'] == "Yes") {
                           $fishinggear = "Y";
                         } else {
                          $fishinggear = "N";
-                      }  
+                      }
                           if($_POST['paddleboard'] == "Yes") {
                           $paddleboard = "Y";
                         } else {
                          $paddleboard = "N";
-                      }  
+                      }
                           if($_POST['terms'] == "Yes") {
                           $aggreedToTerms = "Y";
                         } else {
                          $aggreedToTerms = "N";
-                      }  
+                      }
 
                         //sql comando
-    $sql = "INSERT INTO `bookings` (`bookingID`, `Customers_customerID`, `Yachts_yachtID`, `status`, `paymentStatus`, `paymentPreference`, `date_start`, `date_end`, `catering`, `skipper`, `flottielje`, `groceries`, `transfer`, `insurence`, `childLifejackets`, `fishinggear`, `paddleboard`, `aggreedToTerms`) VALUES ($ID, '$CID', '$YID', '$status', '$paymentstatus', '$paymentPrefrence', 'dates', 'datee', '$catering', '$skipper', '$flottielje', '$groceries', '$transfer', '$insurence', '$childLifejackets', '$fishinggear', '$paddleboard', '$aggreedToTerms')";                             
-      
+    $sql = "INSERT INTO `bookings` (`bookingID`, `Customers_customerID`, `Yachts_yachtID`, `status`, `paymentStatus`, `paymentPreference`, `date_start`, `date_end`, `catering`, `skipper`, `flottielje`, `groceries`, `transfer`, `insurence`, `childLifejackets`, `fishinggear`, `paddleboard`, `aggreedToTerms`) VALUES ($ID, '$CID', '$YID', '$status', '$paymentstatus', '$paymentPrefrence', 'dates', 'datee', '$catering', '$skipper', '$flottielje', '$groceries', '$transfer', '$insurence', '$childLifejackets', '$fishinggear', '$paddleboard', '$aggreedToTerms')";
+
       //sql comando uitvoeren
-      if(mysqli_query($conn, $sql)) {   
-          echo "gelukt";  
+      if(mysqli_query($conn, $sql)) {
+          echo "gelukt";
     }
                     }
                     ?>
-      
-                  
-                  <!-- 
+
+
+                  <!--
                   <div class="r-accordion-body">
                     <form>
                       <div class="row">
