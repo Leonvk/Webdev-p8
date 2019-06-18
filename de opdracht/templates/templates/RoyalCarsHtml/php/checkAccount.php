@@ -3,10 +3,7 @@ function checkAcc() {
   if (session_status() == PHP_SESSION_NONE) {
     echo "Login";
   }
-  else
-  {
-    if($_SESSION["user"] != "") {
-    // header("Location: index.php");
+  elseif($_SESSION["user"] != "") {
     echo "Account";
   }
   else
