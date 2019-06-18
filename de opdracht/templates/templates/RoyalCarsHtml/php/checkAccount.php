@@ -1,6 +1,6 @@
 <?php
 function checkAcc() {
-  if (session_status() === PHP_SESSION_NONE) {
+  if (!isset($_SESSION["user"])) {
     echo "Login";
     $_SESSION["user"] = "";
   }
