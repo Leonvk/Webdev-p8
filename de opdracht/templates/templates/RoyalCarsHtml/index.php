@@ -1661,7 +1661,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
                   <div class="r-footer-block">
                     <div class="r-footer-widget r-footer-map">
-                      <a href="#"> <img src="assets/images/beeldmerk.png" class="icon" alt=''/> RoyalCars on Map</a>
+                      <a href="#"> <img src="assets/images/beeldmerk.png" class="icon" alt=''/> CoralYachts on Map</a>
                     </div>
                     <div class="r-footer-widget r-footer-nav">
                       <h6>ACCOUNT INFORMATION</h6>
