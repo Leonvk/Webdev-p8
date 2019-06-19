@@ -1630,10 +1630,10 @@
                       <h6>USEFUL LINK</h6>
                       <nav>
                         <ul>
-                          <li><a href="#">Private Policy</a></li>
-                          <li><a href="#">Term & Conditions</a></li>
-                          <li><a href="#">Copyright Notification</a></li>
-                          <li><a href="#">Register for New Member</a></li>
+                          <li><a href="contact.html">Private Policy</a></li>
+                          <li><a href="contact.html">Term & Conditions</a></li>
+                          <li><a href="contact.html">Copyright Notification</a></li>
+                          <li><a href="contact.html">Register for New Member</a></li>
                         </ul>
                       </nav>
                     </div>
@@ -1649,10 +1649,10 @@
                       <h6>OUR INFO</h6>
                       <nav>
                         <ul>
-                          <li><a href="#">About Coral Yachts</a></li>
-                          <li><a href="#">Our Mission & Strategy</a></li>
-                          <li><a href="#">Coral Yachts Advantages</a></li>
-                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="contact.html">About Coral Yachts</a></li>
+                          <li><a href="contact.html">Our Mission & Strategy</a></li>
+                          <li><a href="contact.html">Coral Yachts Advantages</a></li>
+                          <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                       </nav>
                     </div>
@@ -1667,10 +1667,10 @@
                       <h6>ACCOUNT INFORMATION</h6>
                       <nav>
                         <ul>
-                          <li><a href="#">Login to My Account</a></li>
+                          <li><a href="login-register.php">Login to My Account</a></li>
                           <li><a href="#">Press Releases</a></li>
-                          <li><a href="#">User Dashboard</a></li>
-                          <li><a href="#">Email Address</a></li>
+                          <li><a href="login-register.php">User Dashboard</a></li>
+                          <li><a href="login-register.php">Email Address</a></li>
                         </ul>
                       </nav>
                     </div>
