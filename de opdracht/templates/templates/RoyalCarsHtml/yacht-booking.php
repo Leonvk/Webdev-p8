@@ -208,70 +208,70 @@
                     Catering:
                     <select name="catering" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Skipper:
                     <select name="skipper" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Flottielje:
                     <select name="flottielje" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Groceries:
                     <select name="groceries" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Transfer:
                     <select name="transfer" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Insurence:
                     <select name="insurence" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     ChildLifejackets:
                     <select name="childLifejackets" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Fishinggear:
                     <select name="fishinggear" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Paddleboard:
                     <select name="paddleboard" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Aggreed To Terms:
                     <select name="terms" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
+                      <option value="Yes">Yes</option>
                     </select>
                     <br>
                     <div class="col-lg-6 col-md-12 r-submission-btn-wrapper">
