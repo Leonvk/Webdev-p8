@@ -62,11 +62,10 @@ function booking() {
     $aggreedToTerms = "N";
   }
 
-  //sql comando
-  // $sql = "INSERT INTO `bookings` (`bookingID`, `Customers_customerID`, `Yachts_yachtID`, `status`, `paymentStatus`, `paymentPreference`, `date_start`, `date_end`, `catering`, `skipper`, `flottielje`, `groceries`, `transfer`, `insurence`, `childLifejackets`, `fishinggear`, `paddleboard`, `aggreedToTerms`) VALUES ($ID, '$CID', '$YID', '$status', '$paymentstatus', '$paymentPrefrence', 'dates', 'datee', '$catering', '$skipper', '$flottielje', '$groceries', '$transfer', '$insurence', '$childLifejackets', '$fishinggear', '$paddleboard', '$aggreedToTerms')";
-
   $query = $mysqli->prepare("INSERT INTO bookings (`Customers_customerID`, `Yachts_yachtID`, `status`, `paymentStatus`, `paymentPreference`, `date_start`, `date_end`, `catering`, `skipper`, `flottielje`, `groceries`, `transfer`, `insurence`, `childLifejackets`, `fishinggear`, `paddleboard`, `aggreedToTerms`) VALUES ($CID, 1, '$status', '$paymentstatus', '$paymentPrefrence', '$dates', '$datee', '$catering', '$skipper', '$flottielje', '$groceries', '$transfer', '$insurence', '$childLifejackets', '$fishinggear', '$paddleboard', '$aggreedToTerms')");
   $query->execute();
+
+  echo 'Succesfully reserved';
 
 }
 
