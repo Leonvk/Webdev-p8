@@ -191,10 +191,10 @@
                   <form action="" method="post">
                     Payment Preference: <select name="payment" class="form-control" required="">
                               <option value="" selected="" disabled=""> - </option>
-                              <option value="">Directdebit</option>
-                              <option value="">Creditcard</option>
-                              <option value="">Paypal</option>
-                              <option value="">Ideal</option>
+                              <option value="Directdebit">Directdebit</option>
+                              <option value="Creditcard">Creditcard</option>
+                              <option value="Paypal">Paypal</option>
+                              <option value="Ideal">Ideal</option>
                             </select>
                     <br>
                     Date Start:
