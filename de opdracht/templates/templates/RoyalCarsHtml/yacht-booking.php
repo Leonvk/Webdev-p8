@@ -191,10 +191,10 @@
                   <form action="" method="post">
                     Payment Preference: <select name="payment" class="form-control" required="">
                               <option value="" selected="" disabled=""> - </option>
-                              <option value="">Directdebit</option>
-                              <option value="">Creditcard</option>
-                              <option value="">Paypal</option>
-                              <option value="">Ideal</option>
+                              <option value="Directdebit">Directdebit</option>
+                              <option value="Creditcard">Creditcard</option>
+                              <option value="Paypal">Paypal</option>
+                              <option value="Ideal">Ideal</option>
                             </select>
                     <br>
                     Date Start:
@@ -208,70 +208,70 @@
                     Catering:
                     <select name="catering" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Skipper:
                     <select name="skipper" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Flottielje:
                     <select name="flottielje" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Groceries:
                     <select name="groceries" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Transfer:
                     <select name="transfer" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Insurence:
                     <select name="insurence" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     ChildLifejackets:
                     <select name="childLifejackets" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Fishinggear:
                     <select name="fishinggear" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Paddleboard:
                     <select name="paddleboard" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
-                      <option value="">No</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
                     </select>
                     <br>
                     Aggreed To Terms:
                     <select name="terms" class="form-control" required="">
                       <option value="" selected="" disabled=""> - </option>
-                      <option value="">Yes</option>
+                      <option value="Yes">Yes</option>
                     </select>
                     <br>
                     <div class="col-lg-6 col-md-12 r-submission-btn-wrapper">
@@ -280,408 +280,12 @@
                     </div>
 
                   </form>
-                <?php
+                  <?php
                     if(isset($_POST["submit"])){
-                        // conectie met database
-                            $servername = "localhost";
-                            $username = "root";
-                            $password = "";
-                            $dbname = "coralyachts";
-                         // Create connection
-                            $conn = mysqli_connect($servername, $username, $password, $dbname);
-                         // Check connection
-                            if (!$conn) {
-                              die("Connection failed: " . mysqli_connect_error());
-                            }
-                        //waarde
-                          $ID = 1;
-                          $CID = 1;
-                          $YID = 1;
-                          $status = "confirmed";
-                          $paymentstatus = "open";
-                          $paymentPrefrence = $_POST['payment'];
-                          $dates = $_POST['datestart'];
-                          $datee = $_POST['dateend'];
-                          if($_POST['catering'] == "Yes") {
-                          $catering = "Y";
-                        } else {
-                         $catering = "N";
-                      }
-                          if($_POST['skipper'] == "Yes") {
-                          $skipper = "Y";
-                        } else {
-                         $skipper = "N";
-                      }
-                          if($_POST['flottielje'] == "Yes") {
-                          $flottielje = "Y";
-                        } else {
-                         $flottielje = "N";
-                      }
-                          if($_POST['groceries'] == "Yes") {
-                          $groceries = "Y";
-                        } else {
-                         $groceries = "N";
-                      }
-                          if($_POST['transfer'] == "Yes") {
-                          $transfer = "Y";
-                        } else {
-                         $transfer = "N";
-                      }
-                          if($_POST['insurence'] == "Yes") {
-                          $insurence = "Y";
-                        } else {
-                         $insurence = "N";
-                      }
-                          if($_POST['childLifejackets'] == "Yes") {
-                          $childLifejackets = "Y";
-                        } else {
-                         $childLifejackets = "N";
-                      }
-                          if($_POST['fishinggear'] == "Yes") {
-                          $fishinggear = "Y";
-                        } else {
-                         $fishinggear = "N";
-                      }
-                          if($_POST['paddleboard'] == "Yes") {
-                          $paddleboard = "Y";
-                        } else {
-                         $paddleboard = "N";
-                      }
-                          if($_POST['terms'] == "Yes") {
-                          $aggreedToTerms = "Y";
-                        } else {
-                         $aggreedToTerms = "N";
-                      }
-
-                        //sql comando
-    $sql = "INSERT INTO `bookings` (`bookingID`, `Customers_customerID`, `Yachts_yachtID`, `status`, `paymentStatus`, `paymentPreference`, `date_start`, `date_end`, `catering`, `skipper`, `flottielje`, `groceries`, `transfer`, `insurence`, `childLifejackets`, `fishinggear`, `paddleboard`, `aggreedToTerms`) VALUES ($ID, '$CID', '$YID', '$status', '$paymentstatus', '$paymentPrefrence', 'dates', 'datee', '$catering', '$skipper', '$flottielje', '$groceries', '$transfer', '$insurence', '$childLifejackets', '$fishinggear', '$paddleboard', '$aggreedToTerms')";
-
-      //sql comando uitvoeren
-      if(mysqli_query($conn, $sql)) {
-          echo "gelukt";
-    }
+                      booking();
                     }
-                    ?>
-
-
-                  <!--
-                  <div class="r-accordion-body">
-                    <form>
-                      <div class="row">
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                          <div class="form-group">
-                            <label>Pickup Address</label>
-                            <div class="input-group">
-                               <input type="text" class="form-control" placeholder="Airport or anywhere" />
-                               <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                          <div class="form-group">
-                            <label>Drop Off Address</label>
-                            <div class="input-group">
-                               <input type="text" class="form-control" placeholder="Airport or anywhere" />
-                               <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                          <div class="form-group">
-                            <label>Pickup date </label>
-                            <div class="input-group">
-                               <input type="text" class="form-control" placeholder="dd.mm.yy" />
-                               <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                          <div class="form-group">
-                            <label>Drop Off date </label>
-                            <div class="input-group">
-                               <input type="text" class="form-control" placeholder="dd.mm.yy" />
-                               <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                          <div class="form-group">
-                            <label>Pickup Time </label>
-                            <div class="input-group">
-                               <input type="text" class="form-control" placeholder="12.00AM" />
-                               <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                          <div class="form-group">
-                            <label>Drop off Time </label>
-                            <div class="input-group">
-                               <input type="text" class="form-control" placeholder="12.00PM" />
-                               <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-
-                <div class="r-site-default-accordion">
-                  <div class="r-accordion-header">
-                    <h2 class="r-accordion-heading">Extra & Fees</h2>
-                    <i class="fa fa-angle-up"></i>
-                  </div>
-                  <div class="r-accordion-body">
-                    <form>
-                      <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                          <ul class="r-fee-list">
-                            <li class="clearfix r-site-checkbox">
-                              <label>
-                                Exsess Protection
-                                <span class="r-extra-fee">$14.00</span>
-                                <input type="checkbox" />
-                                <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                              </label>
-                             </li>
-                            <li class="clearfix r-site-checkbox">
-                              <label>
-                                Navigation
-                                <span class="r-extra-fee">$10.00</span>
-                                <input type="checkbox" />
-                                <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                              </label>
-                             </li>
-                             <li class="clearfix r-site-checkbox">
-                               <label>
-                                 Baby Seat
-                                 <span class="r-extra-fee">$8.00</span>
-                                 <input type="checkbox" />
-                                 <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                               </label>
-                              </li>
-                             <li class="clearfix r-site-checkbox">
-                               <label>
-                                  Car Seat For Childrens
-                                 <span class="r-extra-fee">$10.15</span>
-                                 <input type="checkbox" />
-                                 <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                               </label>
-                              </li>
-                             <li class="clearfix r-site-checkbox">
-                               <label>
-                                Additional Driver
-                                 <span class="r-extra-fee">$14.25</span>
-                                 <input type="checkbox" />
-                                 <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                               </label>
-                              </li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                          <ul class="r-fee-list">
-                            <li class="clearfix r-site-checkbox">
-                              <label>
-                                Exsess Protection
-                                <span class="r-extra-fee">$14.00</span>
-                                <input type="checkbox" />
-                                <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                              </label>
-                             </li>
-                            <li class="clearfix r-site-checkbox">
-                              <label>
-                                Navigation
-                                <span class="r-extra-fee">$10.00</span>
-                                <input type="checkbox" />
-                                <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                              </label>
-                             </li>
-                             <li class="clearfix r-site-checkbox">
-                               <label>
-                                 Baby Seat
-                                 <span class="r-extra-fee">$8.00</span>
-                                 <input type="checkbox" />
-                                 <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                               </label>
-                              </li>
-                             <li class="clearfix r-site-checkbox">
-                               <label>
-                                  Car Seat For Childrens
-                                 <span class="r-extra-fee">$10.15</span>
-                                 <input type="checkbox" />
-                                 <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                               </label>
-                              </li>
-                             <li class="clearfix r-site-checkbox">
-                               <label>
-                                Additional Driver
-                                 <span class="r-extra-fee">$14.25</span>
-                                 <input type="checkbox" />
-                                 <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                               </label>
-                              </li>
-                          </ul>
-                        </div>
-                      </div>
-
-                    </form>
-                  </div>
-                </div>
-
-                <div class="r-site-default-accordion">
-                  <div class="r-accordion-header">
-                    <h2 class="r-accordion-heading">Customer Information</h2>
-                    <i class="fa fa-angle-up"></i>
-                  </div>
-                  <div class="r-accordion-body">
-                    <form>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <div class="r-site-checkbox">
-                              <label>
-                                Mr.
-                                <input type="checkbox" />
-                                <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                              </label>
-                              <label>
-                                Mrs.
-                                <input type="checkbox" />
-                                <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-12">
-                          <div class="form-group">
-                            <label>Full Name</label>
-                            <input type="text" class="form-control" placeholder="Your full name"/>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                          <div class="form-group">
-                            <label>Email Address</label>
-                            <input type="text" class="form-control" placeholder="Example@gmail.com"/>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                          <div class="form-group">
-                            <label>Phone Number</label>
-                            <input type="text" class="form-control" placeholder=""/>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                          <div class="form-group">
-                            <label>Nationality</label>
-                            <select class="form-control">
-                              <option value="">United State</option>
-                              <option value="">India</option>
-                              <option value="">Russia</option>
-                              <option value="">China</option>
-                              <option value="">Australia</option>
-                            </select>
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </form>
-                  </div>
-                </div>
-
-                <div class="r-site-default-accordion">
-                  <div class="r-accordion-header">
-                    <h2 class="r-accordion-heading">Payment Options</h2>
-                    <i class="fa fa-angle-up"></i>
-                  </div>
-                  <div class="r-accordion-body">
-                    <form>
-                      <div class="r-payment-options">
-                        <div class="row">
-                          <div class="col-md-6 col-sm-12">
-                            <div class="r-site-checkbox">
-                              <label>
-                                <input type="checkbox" />
-                                <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                                <span class="r-site-checkbox-text">Direct bank Transfer</span>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-sm-12">
-                            <div class="r-site-checkbox">
-                              <label>
-                                <input type="checkbox" />
-                                <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                                <span class="r-site-checkbox-text">Credit Card</span>
-                              </label>
-                              <img src="assets/images/paypal-icon.jpg" alt="" class="" />
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-sm-12">
-                            <div class="r-site-checkbox">
-                              <label>
-                                <input type="checkbox" />
-                                <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                                <span class="r-site-checkbox-text">Cheque Payment</span>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-sm-12">
-                            <div class="r-site-checkbox">
-                              <label>
-                                <input type="checkbox" />
-                                <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                                <span class="r-site-checkbox-text">Paypal</span>
-                              </label>
-                              <img src="assets/images/creditcards.png" alt="" class="" style=""/>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-
-                <div class="r-site-default-accordion">
-                  <div class="r-accordion-header">
-                    <h2 class="r-accordion-heading">Addition Information</h2>
-                    <i class="fa fa-angle-up"></i>
-                  </div>
-                  <div class="r-accordion-body">
-                    <form>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <textarea class="form-control" placeholder="Additional note"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-
-                <div class="r-booking-form-submission">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                      <div class="r-site-checkbox">
-                        <label>
-                          <input type="checkbox" />
-                          <span class="r-site-checkbox-icon"> <i class="fa fa-check-square"></i> </span>
-                          <span class="r-site-checkbox-text">I accept all informations & payment eyc</span>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 r-submission-btn-wrapper">
-                      <input type="reset" class="btn-default" value="Cancel This" />
-                      <input type="submit" class="btn-primary" value="Reserve Now" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          -->
+                  ?>
+                  
             <div class="r-similar-product">
               <h2 class="heading"> Similar Cars </h2>
               <div class="r-best-offer-list owl-carousel" id="similarProductCarousel">
