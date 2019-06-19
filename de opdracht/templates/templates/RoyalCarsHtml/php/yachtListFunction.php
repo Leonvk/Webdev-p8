@@ -4,7 +4,7 @@ function selectYachts()
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "choralyachts";
+    $dbname = "coralyachts";
 
 // Create connection
     $mysqli = new mysqli("localhost", "root", "", "choralyachts");
