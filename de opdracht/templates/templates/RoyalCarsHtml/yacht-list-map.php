@@ -1,3 +1,7 @@
+<?php
+include 'php/yachtListFunction.php';
+
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
@@ -5,10 +9,10 @@
     <title>Car List Map - Royal Cars</title>
 
     <!-- META-DATA -->
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="" >
-    <meta name="keywords" content="" >
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/images/favicon.png">
@@ -23,9 +27,9 @@
     <link rel="stylesheet" type="text/css" id="r-color-roller" href="assets/color-files/color-08.css">
 
     <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="assets\js\custom.js"></script>
 
@@ -53,10 +57,12 @@
     <header>
         <div class="r-header r-header-inner">
             <div class="r-header r-header-inner r-header-strip-01">
-                <div id="header"><script>header()</script></div>
+                <div id="header">
+                    <script>header()</script>
+                </div>
                 <div class="r-header-inner-banner">
                     <div class="r-header-in-over">
-                        <h1>Royal Cars <b>Vehicles</b> </h1>
+                        <h1>Royal Cars <b>Vehicles</b></h1>
                         <div class="r-breadcrum">
                             <ul>
                                 <li><a href="#">HOME</a></li>
@@ -77,7 +83,8 @@
                             <div class="row">
                                 <div class="r-search-full col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Search yacht by name or location">
+                                        <input type="text" class="form-control"
+                                               placeholder="Search yacht by name or location">
                                         <button class="fa fa-search"></button>
                                     </div>
                                 </div>
@@ -125,20 +132,24 @@
                     <div class="pull-left">
                         <span>Sort by : </span>
                         <select class="r-show-cars-filter">
-                            <option value="6"> Name </option>
-                            <option value="10"> Price </option>
-                            <option value="20"> Age </option>
+                            <option value="6"> Name</option>
+                            <option value="10"> Price</option>
+                            <option value="20"> Age</option>
                         </select>
                     </div>
                     <div class="pull-right"><span class="r-total-result">6 Search results</span></div>
                 </div>
                 <div class="r-best-offer-list r-car-list-map mCustomScrollbar">
                     <div class="row clearfix">
+                        <?php
+                        selectYachts();
+                        ?>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <div class="r-best-offer-single">
                                 <div class="r-best-offer-in">
                                     <div class="r-offer-img">
-                                        <a class="d-inline-block" href="#"><img src="assets/images/yacht1.jpeg" class="img-fluid d-block m-auto" alt=""></a>
+                                        <a class="d-inline-block" href="#"><img src="assets/images/yacht1.jpeg"
+                                                                                class="img-fluid d-block m-auto" alt=""></a>
                                     </div>
                                     <div class="r-best-offer-content">
                                         <a href="#"><b>Volk</b> GTR</a>
@@ -152,150 +163,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="r-best-offer-single">
-                                <div class="r-best-offer-in">
-                                    <div class="r-offer-img">
-                                        <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                                    </div>
-                                    <div class="r-best-offer-content">
-                                        <a href="#"><b>Hyundai</b> Z.E</a>
-                                        <p>Start at <b>45.00 USD</b> per day</p>
-                                        <ul class="pl-0 mb-0">
-                                            <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                            <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                            <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="r-best-offer-single">
-                                <div class="r-best-offer-in">
-                                    <div class="r-offer-img">
-                                        <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                                    </div>
-                                    <div class="r-best-offer-content">
-                                        <a href="#"><b>Audi</b> R8</a>
-                                        <p>Start at <b>45.00 USD</b> per day</p>
-                                        <ul class="pl-0 mb-0">
-                                            <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                            <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                            <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="r-best-offer-single">
-                                <div class="r-best-offer-in">
-                                    <div class="r-offer-img">
-                                        <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                                    </div>
-                                    <div class="r-best-offer-content">
-                                        <a href="#"><b>Volk</b> GTR</a>
-                                        <p>Start at <b>45.00 USD</b> per day</p>
-                                        <ul class="pl-0 mb-0">
-                                            <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                            <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                            <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="r-best-offer-single">
-                                <div class="r-best-offer-in">
-                                    <div class="r-offer-img">
-                                        <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                                    </div>
-                                    <div class="r-best-offer-content">
-                                        <a href="#"><b>Hyundai</b> Z.E</a>
-                                        <p>Start at <b>45.00 USD</b> per day</p>
-                                        <ul class="pl-0 mb-0">
-                                            <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                            <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                            <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="r-best-offer-single">
-                                <div class="r-best-offer-in">
-                                    <div class="r-offer-img">
-                                        <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                                    </div>
-                                    <div class="r-best-offer-content">
-                                        <a href="#"><b>Audi</b> R8</a>
-                                        <p>Start at <b>45.00 USD</b> per day</p>
-                                        <ul class="pl-0 mb-0">
-                                            <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                            <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                            <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="r-best-offer-single">
-                                <div class="r-best-offer-in">
-                                    <div class="r-offer-img">
-                                        <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                                    </div>
-                                    <div class="r-best-offer-content">
-                                        <a href="#"><b>Volk</b> GTR</a>
-                                        <p>Start at <b>45.00 USD</b> per day</p>
-                                        <ul class="pl-0 mb-0">
-                                            <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                            <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                            <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="r-best-offer-single">
-                                <div class="r-best-offer-in">
-                                    <div class="r-offer-img">
-                                        <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                                    </div>
-                                    <div class="r-best-offer-content">
-                                        <a href="#"><b>Hyundai</b> Z.E</a>
-                                        <p>Start at <b>45.00 USD</b> per day</p>
-                                        <ul class="pl-0 mb-0">
-                                            <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                            <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                            <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="r-best-offer-single">
-                                <div class="r-best-offer-in">
-                                    <div class="r-offer-img">
-                                        <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                                    </div>
-                                    <div class="r-best-offer-content">
-                                        <a href="#"><b>Audi</b> R8</a>
-                                        <p>Start at <b>45.00 USD</b> per day</p>
-                                        <ul class="pl-0 mb-0">
-                                            <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                            <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                            <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -334,7 +203,8 @@
                         <div class="r-footer-block">
                             <img src="assets/images/logo_small.png" class="d-block img-fluid" alt="">
                             <p>
-                                We know the difference is in the details and that’s why our car rental services, in the tourism and business industry, stand out for their quality.
+                                We know the difference is in the details and that’s why our car rental services, in the
+                                tourism and business industry, stand out for their quality.
                             </p>
                             <form action="#">
                                 <div class="r-newsletter">
@@ -387,7 +257,8 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="r-footer-block">
                             <div class="r-footer-widget r-footer-map">
-                                <a href="#"> <img src="assets/images/beeldmerk.png" class="icon" alt=''/> RoyalCars on Map</a>
+                                <a href="#"> <img src="assets/images/beeldmerk.png" class="icon" alt=''/> RoyalCars on
+                                    Map</a>
                             </div>
                             <div class="r-footer-widget r-footer-nav">
                                 <h6>ACCOUNT INFORMATION</h6>
