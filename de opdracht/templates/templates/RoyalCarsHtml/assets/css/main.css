@@ -11356,7 +11356,7 @@ COLOR CUSTOMIZER
     position: relative;
     z-index: 99; }
   .r-welcome-msg-part:after {
-    content: "A";
+    content: "C";
     font-size: 200px;
     color: #f8f8f8;
     font-weight: 700;
