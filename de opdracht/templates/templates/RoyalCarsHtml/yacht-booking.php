@@ -280,88 +280,12 @@
                     </div>
 
                   </form>
-                <?php
+                  <?php
                     if(isset($_POST["submit"])){
-                        // conectie met database
-                            $servername = "localhost";
-                            $username = "root";
-                            $password = "";
-                            $dbname = "coralyachts";
-                         // Create connection
-                            $conn = mysqli_connect($servername, $username, $password, $dbname);
-                         // Check connection
-                            if (!$conn) {
-                              die("Connection failed: " . mysqli_connect_error());
-                            }
-                        //waarde
-                          $ID = 1;
-                          $CID = 1;
-                          $YID = 1;
-                          $status = "confirmed";
-                          $paymentstatus = "open";
-                          $paymentPrefrence = $_POST['payment'];
-                          $dates = $_POST['datestart'];
-                          $datee = $_POST['dateend'];
-                          if($_POST['catering'] == "Yes") {
-                          $catering = "Y";
-                        } else {
-                         $catering = "N";
-                      }
-                          if($_POST['skipper'] == "Yes") {
-                          $skipper = "Y";
-                        } else {
-                         $skipper = "N";
-                      }
-                          if($_POST['flottielje'] == "Yes") {
-                          $flottielje = "Y";
-                        } else {
-                         $flottielje = "N";
-                      }
-                          if($_POST['groceries'] == "Yes") {
-                          $groceries = "Y";
-                        } else {
-                         $groceries = "N";
-                      }
-                          if($_POST['transfer'] == "Yes") {
-                          $transfer = "Y";
-                        } else {
-                         $transfer = "N";
-                      }
-                          if($_POST['insurence'] == "Yes") {
-                          $insurence = "Y";
-                        } else {
-                         $insurence = "N";
-                      }
-                          if($_POST['childLifejackets'] == "Yes") {
-                          $childLifejackets = "Y";
-                        } else {
-                         $childLifejackets = "N";
-                      }
-                          if($_POST['fishinggear'] == "Yes") {
-                          $fishinggear = "Y";
-                        } else {
-                         $fishinggear = "N";
-                      }
-                          if($_POST['paddleboard'] == "Yes") {
-                          $paddleboard = "Y";
-                        } else {
-                         $paddleboard = "N";
-                      }
-                          if($_POST['terms'] == "Yes") {
-                          $aggreedToTerms = "Y";
-                        } else {
-                         $aggreedToTerms = "N";
-                      }
-
-                        //sql comando
-    $sql = "INSERT INTO `bookings` (`bookingID`, `Customers_customerID`, `Yachts_yachtID`, `status`, `paymentStatus`, `paymentPreference`, `date_start`, `date_end`, `catering`, `skipper`, `flottielje`, `groceries`, `transfer`, `insurence`, `childLifejackets`, `fishinggear`, `paddleboard`, `aggreedToTerms`) VALUES ($ID, '$CID', '$YID', '$status', '$paymentstatus', '$paymentPrefrence', 'dates', 'datee', '$catering', '$skipper', '$flottielje', '$groceries', '$transfer', '$insurence', '$childLifejackets', '$fishinggear', '$paddleboard', '$aggreedToTerms')";
-
-      //sql comando uitvoeren
-      if(mysqli_query($conn, $sql)) {
-          echo "gelukt";
-    }
+                      booking();
                     }
-                    ?>
+                  ?>
+
 
 
                   <!--
