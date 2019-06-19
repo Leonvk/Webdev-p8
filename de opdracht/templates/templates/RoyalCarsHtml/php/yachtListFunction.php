@@ -7,7 +7,7 @@ function selectYachts()
     $dbname = "coralyachts";
 
 // Create connection
-    $mysqli = new mysqli("localhost", "root", "", "choralyachts");
+    $mysqli = new mysqli("localhost", "root", "", "coralyachts");
 
 // Check connection
     if ($mysqli->connect_error) {
