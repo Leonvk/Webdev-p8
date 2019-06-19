@@ -44,11 +44,8 @@
                             <li class="r-has-child">
                                 <a href="index.php">HOME</a>
                             </li>
-                            <li class="r-has-child">
+                            <li>
                                 <a href="about.html">ABOUT US</a>
-                                <ul class="pl-0 ml-0">
-                                    <li><a href="faq.html">Faq</a></li>
-                                </ul>
                             </li>
                             <li class="r-has-child">
                                 <a href="car-listing.html">YACHTS</a>
