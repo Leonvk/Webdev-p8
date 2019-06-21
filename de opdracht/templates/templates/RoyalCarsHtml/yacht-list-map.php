@@ -144,25 +144,7 @@ include 'php/yachtListFunction.php';
                         <?php
                         selectYachts();
                         ?>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="r-best-offer-single">
-                                <div class="r-best-offer-in">
-                                    <div class="r-offer-img">
-                                        <a class="d-inline-block" href="#"><img src="assets/images/yacht1.jpeg"
-                                                                                class="img-fluid d-block m-auto" alt=""></a>
-                                    </div>
-                                    <div class="r-best-offer-content">
-                                        <a href="#"><b>Volk</b> GTR</a>
-                                        <p>Start at <b>45.00 USD</b> per day</p>
-                                        <ul class="pl-0 mb-0">
-                                            <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                            <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                            <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
 
 
                     </div>
@@ -170,31 +152,7 @@ include 'php/yachtListFunction.php';
             </div>
         </div>
     </div>
-    <section id="r-get-in-touch">
-        <div class="r-get-in-touch">
-            <div class="container">
-                <div class="r-get-header">
-                    <span>CONTACT US NOW</span>
-                    <h2>Keep <b>In Touch.</b></h2>
-                </div>
-                <div class="r-get-form">
-                    <form action="#">
-                        <div class="clearfix">
-                            <div class="form-group"><input type="text" placeholder="User name"></div>
-                            <div class="form-group"><input type="email" placeholder="Email Address"></div>
-                        </div>
-                        <div class="form-group"><input type="email" placeholder="Title Message"></div>
-                        <div class="form-group">
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn btn-full">SEND MESSAGE NOW</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <footer>
         <div class="r-footer">
             <div class="container">
