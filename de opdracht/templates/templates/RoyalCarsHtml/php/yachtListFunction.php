@@ -38,7 +38,7 @@ ON yachts.yachtID = yachttypes.yachtTypeID;";
                                     </div>
                                     <div class="r-best-offer-content">
                                         <a href="#"><b>' . $row["name"] . '</b></a>
-                                        <p>Start at <b>' . $row["gear"] . 'USD</b> per day</p>
+                                        <p>Borrow <b>' . $row["gear"] . ' </b>Now!</p>
                                         <ul class="pl-0 mb-0">
                                             <li><i class="fa fa-cogs"></i><span>' . $row["length"] . '</span></li>
                                             <li><i class="fa fa-beer"></i><span>' . $row["depth"] . '</span></li>

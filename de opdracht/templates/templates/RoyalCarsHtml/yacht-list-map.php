@@ -137,7 +137,7 @@ include 'php/yachtListFunction.php';
                             <option value="20"> Age</option>
                         </select>
                     </div>
-                    <div class="pull-right"><span class="r-total-result">6 Search results</span></div>
+                    <div class="pull-right"><span class="r-total-result">Search succesfull</span></div>
                 </div>
                 <div class="r-best-offer-list r-car-list-map mCustomScrollbar">
                     <div class="row clearfix">
@@ -152,7 +152,7 @@ include 'php/yachtListFunction.php';
             </div>
         </div>
     </div>
-    
+
     <footer>
         <div class="r-footer">
             <div class="container">
