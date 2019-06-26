@@ -6,7 +6,7 @@ include 'php/yachtListFunction.php';
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <!-- PAGE TITLE -->
-    <title>Car List Map - Royal Cars</title>
+    <title>Yacht List Map - Coral Yachts</title>
 
     <!-- META-DATA -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -62,11 +62,11 @@ include 'php/yachtListFunction.php';
                 </div>
                 <div class="r-header-inner-banner">
                     <div class="r-header-in-over">
-                        <h1>Royal Cars <b>Vehicles</b></h1>
+                        <h1>Coral Yachts <b>Yachts</b></h1>
                         <div class="r-breadcrum">
                             <ul>
                                 <li><a href="#">HOME</a></li>
-                                <li><span>Vehicles</span></li>
+                                <li><span>Yachts</span></li>
                             </ul>
                         </div>
                     </div>
@@ -77,177 +77,116 @@ include 'php/yachtListFunction.php';
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-10 col-lg-10 col-md-6 col-sm-12 col-xs-12 r-list-area">
-                <div class="r-car-search r-carlist-search">
-                    <div class="container">
-                        <form>
-                            <div class="row">
-                                <div class="r-search-full col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control"
-                                               placeholder="Search yacht by name or location">
-                                        <button class="fa fa-search"></button>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <div class="form-group">
-                                        <label> Yachts Brand </label>
-                                        <select class="form-control">
-                                            <option>Any Brands</option>
-                                            <option>Any Brands</option>
-                                            <option>Any Brands</option>
-                                            <option>Any Brands</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <div class="form-group">
-                                        <label> Yacht Type </label>
-                                        <select class="form-control">
-                                            <option>Any Type</option>
-                                            <option>Any Type</option>
-                                            <option>Any Type</option>
-                                            <option>Any Type</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <div class="form-group">
-                                        <label> Yacht Price </label>
-                                        <select class="form-control">
-                                            <option>Price Low to High</option>
-                                            <option>Price High to Low</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="form-group mb-0">
-                                        <input type="submit" class="form-control btn-primary" value="Search Yacht Now">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="clearfix r-sort-val">
-                    <div class="pull-left">
-                        <span>Sort by : </span>
-                        <select class="r-show-cars-filter">
-                            <option value="6"> Name</option>
-                            <option value="10"> Price</option>
-                            <option value="20"> Age</option>
-                        </select>
-                    </div>
-                    <div class="pull-right"><span class="r-total-result">Search succesfull</span></div>
-                </div>
-                <div class="r-best-offer-list r-car-list-map mCustomScrollbar">
-                    <div class="row clearfix">
-                        <?php
-                        selectYachts();
-                        ?>
+            </div>
+            
+            <div class="r-best-offer-list r-car-list-map mCustomScrollbar">
+                <div class="row clearfix">
+                    <?php
+                    selectYachts();
+                    ?>
 
 
-
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <footer>
-        <div class="r-footer">
-            <div class="container">
-                <div class="row clearfix">
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="r-footer-block">
-                            <img src="assets/images/logo_small.png" class="d-block img-fluid" alt="">
-                            <p>
-                                We know the difference is in the details and that’s why our car rental services, in the
-                                tourism and business industry, stand out for their quality.
-                            </p>
-                            <form action="#">
-                                <div class="r-newsletter">
-                                    <input type="email" placeholder="Subscribe Newsletter">
-                                    <button class="btn"><i class="fa fa-envelope"></i></button>
-                                </div>
-                            </form>
-                        </div>
+<footer>
+    <div class="r-footer">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="r-footer-block">
+                        <img src="assets/images/logo_small.png" class="d-block img-fluid" alt="">
+                        <p>
+                            We know the difference is in the details and that’s why our yacht rental services, in the
+                            tourism and business industry, stand out for their quality.
+                        </p>
+                        <form action="#">
+                            <div class="r-newsletter">
+                                <input type="email" placeholder="Subscribe Newsletter">
+                                <button class="btn"><i class="fa fa-envelope"></i></button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="r-footer-block">
-                            <div class="r-footer-widget r-footer-phone">
-                                <span><i class="fa fa-phone"></i> CALL US ON LINE 1</span>
-                                <h5>100.1212.2000</h5>
-                            </div>
-                            <div class="r-footer-widget r-footer-nav">
-                                <h6>USEFUL LINK</h6>
-                                <nav>
-                                    <ul>
-                                        <li><a href="#">Private Policy</a></li>
-                                        <li><a href="#">Term & Conditions</a></li>
-                                        <li><a href="#">Copyright Notification</a></li>
-                                        <li><a href="#">Register for New Member</a></li>
-                                        <li><a href="#">Press Release</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="r-footer-block">
+                        <div class="r-footer-widget r-footer-phone">
+                            <span><i class="fa fa-phone"></i> CALL US ON LINE 1</span>
+                            <h5>100.1212.2000</h5>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="r-footer-block">
-                            <div class="r-footer-widget r-footer-phone">
-                                <span><i class="fa fa-phone"></i> CALL US ON LINE 2</span>
-                                <h5>100.2424.2000</h5>
-                            </div>
-                            <div class="r-footer-widget r-footer-nav">
-                                <h6>OUR INFO</h6>
-                                <nav>
-                                    <ul>
-                                        <li><a href="#">About Royal Cars</a></li>
-                                        <li><a href="#">Our Mission & Strategy</a></li>
-                                        <li><a href="#">Our Vision</a></li>
-                                        <li><a href="#">Royal Cars Advantages</a></li>
-                                        <li><a href="#">Contact Us</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="r-footer-block">
-                            <div class="r-footer-widget r-footer-map">
-                                <a href="#"> <img src="assets/images/beeldmerk.png" class="icon" alt=''/> RoyalCars on
-                                    Map</a>
-                            </div>
-                            <div class="r-footer-widget r-footer-nav">
-                                <h6>ACCOUNT INFORMATION</h6>
-                                <nav>
-                                    <ul>
-                                        <li><a href="#">Login to My Account</a></li>
-                                        <li><a href="#">Press Releases</a></li>
-                                        <li><a href="#">User Dashboard</a></li>
-                                        <li><a href="#">Email Address</a></li>
-                                        <li><a href="#">Lorem Ipsum dolorsit</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
+                        <div class="r-footer-widget r-footer-nav">
+                            <h6>USEFUL LINK</h6>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Private Policy</a></li>
+                                    <li><a href="#">Term & Conditions</a></li>
+                                    <li><a href="#">Copyright Notification</a></li>
+                                    <li><a href="#">Register for New Member</a></li>
+                                    <li><a href="#">Press Release</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
-                <div class="row clearfix r-footer-strip">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        ©2018 Created by jThemes Studio
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="r-footer-block">
+                        <div class="r-footer-widget r-footer-phone">
+                            <span><i class="fa fa-phone"></i> CALL US ON LINE 2</span>
+                            <h5>100.2424.2000</h5>
+                        </div>
+                        <div class="r-footer-widget r-footer-nav">
+                            <h6>OUR INFO</h6>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">About Coral Yachts</a></li>
+                                    <li><a href="#">Our Mission & Strategy</a></li>
+                                    <li><a href="#">Our Vision</a></li>
+                                    <li><a href="#">Coral Yachts Advantages</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i>. <span>Facebook</span></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i>.<span>Twitter</span></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i>.<span>Instagram</span></a></li>
-                        </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="r-footer-block">
+                        <div class="r-footer-widget r-footer-map">
+                            <a href="#"> <img src="assets/images/beeldmerk.png" class="icon" alt=''/> Coral Yachts on
+                                Map</a>
+                        </div>
+                        <div class="r-footer-widget r-footer-nav">
+                            <h6>ACCOUNT INFORMATION</h6>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Login to My Account</a></li>
+                                    <li><a href="#">Press Releases</a></li>
+                                    <li><a href="#">User Dashboard</a></li>
+                                    <li><a href="#">Email Address</a></li>
+                                    <li><a href="#">Lorem Ipsum dolorsit</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="row clearfix r-footer-strip">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    ©2018 Created by jThemes Studio
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i>. <span>Facebook</span></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i>.<span>Twitter</span></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i>.<span>Instagram</span></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
 </div>
 <div id="r-to-top" class="r-to-top"><i class="fa fa-angle-up"></i></div>
 <!-- JQUERY:: JQUERY.JS -->

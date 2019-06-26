@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
       <!-- PAGE TITLE -->
-      <title>Home - Royal Cars</title>
+      <title>Home - Coral Yachts</title>
 
       <!-- META-DATA -->
       <meta http-equiv="content-type" content="text/html; charset=utf-8" >
@@ -64,11 +64,11 @@
             <div id="header"><script>header()</script></div>
             <div class="r-header-inner-banner">
               <div class="r-header-in-over">
-                <h1>Royal Cars<b> Vehicles.</b> </h1>
+                <h1>Coral Yachts<b> Yachts.</b> </h1>
                 <div class="r-breadcrum">
                   <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><span>VEHICLES</span></li>
+                    <li><span>YACHTS</span></li>
                   </ul>
                 </div>
               </div>
@@ -131,8 +131,8 @@
                 <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
                   <div class="r-car-info-content">
                     <span class="r-reg-year">Registered 2016</span>
-                    <h2 class="r-product-name"> Mercedes Benz <span>GTR</span> </h2>
-                    <p class="r-product-description">This was our first time renting from Royal Cars and we were very pleased with the whole experience. Your price was lower than other companies.</p>
+                    <h2 class="r-product-name"> FTL yachts <span>GTR</span> </h2>
+                    <p class="r-product-description">This was our first time renting from Coral Yachts and we were very pleased with the whole experience. Your price was lower than other companies.</p>
                     <div class="table-responsive">
                       <table class="table table-bordered">
                         <tr>
@@ -286,299 +286,7 @@
                     }
                   ?>
                   
-            <div class="r-similar-product">
-              <h2 class="heading"> Similar Cars </h2>
-              <div class="r-best-offer-list owl-carousel" id="similarProductCarousel">
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Volkswagen</b> GTR</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-6.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Audi</b> S8</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-3.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Nissan</b> Skyline</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Mercedes</b> GTR3</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Volkswagen</b> GTR</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-6.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Audi</b> S8</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-3.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Nissan</b> Skyline</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Mercedes</b> GTR3</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Volkswagen</b> GTR</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-6.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Audi</b> S8</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-3.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Nissan</b> Skyline</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="r-best-offer-single">
-                  <div class="r-best-offer-in">
-                    <div class="r-offer-img">
-                      <a class="d-inline-block" href="#"><img src="assets/images/car-1.png" class="img-fluid d-block m-auto" alt=""></a>
-                      <div class="r-offer-img-over">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                    <div class="r-best-offer-content">
-                      <a href="#"><b>Mercedes</b> GTR3</a>
-                      <p>Start at <b>45.00 USD</b> per day</p>
-                      <ul class="pl-0 mb-0">
-                        <li><i class="fa fa-car"></i><span>2017</span></li>
-                        <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                        <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                        <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
-                      </ul>
-                    </div>
-                    <div class="r-offer-rewst-this">
-                      <span class="text-uppercase">Rent this car</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section> <!-- /r-car-info -->
 
         <section id="r-get-in-touch">
@@ -654,10 +362,10 @@
                       <h6>OUR INFO</h6>
                       <nav>
                         <ul>
-                          <li><a href="#">About Royal Cars</a></li>
+                          <li><a href="#">About Coral Yachts</a></li>
                           <li><a href="#">Our Mission & Strategy</a></li>
                           <li><a href="#">Our Vision</a></li>
-                          <li><a href="#">Royal Cars Advantages</a></li>
+                          <li><a href="#">Coral Yachts Advantages</a></li>
                           <li><a href="#">Contact Us</a></li>
                         </ul>
                       </nav>
@@ -667,7 +375,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
                   <div class="r-footer-block">
                     <div class="r-footer-widget r-footer-map">
-                      <a href="#"> <img src="assets/images/icon-footer-map.png" class="icon" alt=''/> RoyalCars on Map</a>
+                      <a href="#"> <img src="assets/images/icon-footer-map.png" class="icon" alt=''/> Coral Yachts on Map</a>
                     </div>
                     <div class="r-footer-widget r-footer-nav">
                       <h6>ACCOUNT INFORMATION</h6>
